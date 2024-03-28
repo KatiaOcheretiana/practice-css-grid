@@ -4,19 +4,36 @@
 
 .container {
   display: grid;
+  grid-template-columns: repeat(4 1fr);
+  grid-template-rows: repeat(3, 150px);
+  gap: 20px;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
 }
 
 .header {
+  grid-area: header;
 }
 
 .main {
+  grid-area: main;
 }
 
 .sidebar {
+  grid-area: sidebar;
 }
 
 .footer {
+  grid-area: footer;
 }
 
 @media (max-width: 700px) {
+  .container {
+    grid-template-areas:
+      "sidebar header header header"
+      "sidebar main main main"
+      "sidebar  footer footer footer";
+  }
 }
