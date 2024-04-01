@@ -31,6 +31,14 @@
   padding: 0 16px;
 }
 
+.header-container {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  column-gap: 8px;
+  align-items: center;
+  padding: 0;
+}
+
 .posts {
   margin-bottom: 80px;
 }

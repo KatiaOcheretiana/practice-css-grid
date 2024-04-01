@@ -45,6 +45,20 @@
   grid-template-columns: 1fr;
 }
 
+.socials-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 24px;
+  column-gap: 8px;
+}
+
+.social-link {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
 @media (min-width: 768px) {
   .posts {
     gap: 24px;
@@ -54,6 +68,10 @@
   .post:first-child {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+  }
+
+  .socials-list {
+    column-gap: 24px;
   }
 }
 

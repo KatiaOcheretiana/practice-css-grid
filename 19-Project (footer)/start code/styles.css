@@ -211,3 +211,11 @@
   padding: 16px;
   background-color: var(--blue-light);
 }
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  align-items: center;
+  column-gap: 8px;
+  padding: 0;
+}

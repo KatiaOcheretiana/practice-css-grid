@@ -34,6 +34,6 @@
     grid-template-areas:
       "sidebar header header header"
       "sidebar main main main"
-      "sidebar  footer footer footer";
+      "sidebar  footer footer footer1";
   }
 }
